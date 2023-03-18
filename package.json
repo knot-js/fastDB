@@ -1,0 +1,18 @@
+{
+  "name": "fastdb",
+  "version": "0.0.1",
+  "description": "Fast DB, an embedded, NOSQL database for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "install": "npm install",
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Chirag Chandrashekhar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.14.6"
+  }
+}
