@@ -2,17 +2,24 @@
   "name": "fastdb",
   "version": "0.0.1",
   "description": "Fast DB, an embedded, NOSQL database for NodeJS",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "install": "npm install",
     "build": "tsc",
-    "start": "tsc && node dist/index.js"
+    "start": "tsc && node dist/index.js",
+    "link": "tsc && npm link"
   },
   "keywords": [],
   "author": "Chirag Chandrashekhar",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.14.6"
+    "@types/node": "^18.14.6",
+    "@types/uuid": "^9.0.1",
+    "np": "^7.6.4"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
   }
 }
