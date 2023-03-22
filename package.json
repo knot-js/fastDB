@@ -5,12 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
-    "install": "npm install",
     "build": "tsc",
-    "start": "tsc && node dist/index.js",
-    "link": "tsc && npm link",
-    "publish": "tsc && np --any-branch"
+    "start": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "Chirag Chandrashekhar",
