@@ -10,7 +10,7 @@
     "build": "tsc",
     "start": "tsc && node dist/index.js",
     "link": "tsc && npm link",
-    "publish": "tsc && np"
+    "publish": "tsc && np --any-branch"
   },
   "keywords": [],
   "author": "Chirag Chandrashekhar",
