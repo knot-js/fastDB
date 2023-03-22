@@ -1,6 +1,6 @@
 {
-  "name": "fastdb",
-  "version": "0.0.1",
+  "name": "@knotjs/fastdb",
+  "version": "0.1.0",
   "description": "Fast DB, an embedded, NOSQL database for NodeJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
