@@ -21,7 +21,11 @@ export class FastDB {
   };
 
   public get = async <T>(collectionName: string): Promise<Document<T>[]> => {
-    const collectionPath = path.join(this.dbPath, collectionName);
+    const collectionPath = path.join(
+      this.dbPath,
+      collectionName,
+      `${collectionName}.json`
+    );
     const collection = await fs.promises.readFile(collectionPath);
     return JSON.parse(collection.toString());
   };
@@ -30,7 +34,11 @@ export class FastDB {
     collectionName: string,
     documents: Document<T>[]
   ): Promise<void> => {
-    const collectionPath = path.join(this.dbPath, collectionName);
+    const collectionPath = path.join(
+      this.dbPath,
+      collectionName,
+      `${collectionName}.json`
+    );
     const collection = JSON.stringify(documents);
 
     try {
