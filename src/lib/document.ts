@@ -1,4 +1,4 @@
-import * as crypto from "crypto";
+import crypto from "crypto";
 export class Document<T> {
   id: string;
   createdAt: Date;
