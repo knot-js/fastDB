@@ -1,6 +1,6 @@
-import { Document } from "./document";
-import fastDb, { FastDB } from "./db";
-import { Where } from "./interfaces";
+import { Document } from "@lib/document";
+import fastDb, { FastDB } from "@lib/db";
+import { Where } from "@lib/interfaces";
 
 export class Collection<T> {
   name: string;

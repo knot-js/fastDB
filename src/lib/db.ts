@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { Document } from "./document";
+import { Document } from "@lib/document";
 export class FastDB {
   public name: string = "";
   public dbPath: string = "";

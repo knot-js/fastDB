@@ -1,19 +1,20 @@
 {
   "name": "@knotjs/fastdb",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fast DB, an embedded, NOSQL database for NodeJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "start": "tsc && node dist/index.js"
+    "build": "tsc && tsc-alias",
+    "prepublish": "npm run build",
+    "publish": "npm run prepublish && npm publish --access public"
   },
   "keywords": [],
   "author": "Chirag Chandrashekhar",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.14.6",
+    "tsc-alias": "^1.8.4",
     "typescript": "^5.0.2"
-  },
-  "dependencies": {}
+  }
 }
