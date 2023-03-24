@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 export class Document<T> {
   id: string;
   createdAt: Date;
@@ -8,7 +7,7 @@ export class Document<T> {
   data: T;
 
   constructor(data: T) {
-    this.id = uuidv4();
+    this.id = crypto.randomUUID();
     this.createdAt = new Date();
     this.updatedAt = new Date();
     this.deletedAt = null;
